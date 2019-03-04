@@ -22,12 +22,10 @@ namespace FullName
         }
 
         // TODO: Create a method call FullName that takes the firstName and lastName as parameters.
-        static void FullName(string firstName, string lastName);
+        static void FullName(string firstName, string lastName)
         {
-           string message = (firstName + lastName); 
-
-            return String.Concat(message);
-
+           Console.WriteLine($"{0} {1}");
+            
         }
-    }   
+    }
 }
