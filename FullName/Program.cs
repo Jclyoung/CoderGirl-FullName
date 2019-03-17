@@ -8,24 +8,21 @@ namespace FullName
         {
             // TODO: Ask the user for their first name and then their last name.
             Console.Write("What is your first name?");
-            string firstName = Console.Readline();
-
+            string firstName = Console.ReadLine();
             Console.Write("What is your last name?");
-            string lastName = Console.Readline();
+            string lastName = Console.ReadLine();
 
             // TODO: Call a method called FullName that returns their full name.
-           Console.WriteLine(FullName);
-            
-            // TODO: Output their full name.
-
-            Console.ReadLine();
+            Console.WriteLine(FullName(firstName, lastName));
+            Console.ReadLine();            
+            // TODO: Output their full name.            
         }
-
         // TODO: Create a method call FullName that takes the firstName and lastName as parameters.
-        static void FullName(string firstName, string lastName)
+        public static string FullName( string firstName, string lastName)
         {
-           Console.WriteLine($"{0} {1}");
-            
+            string fullName = firstName + " " + lastName;
+            return fullName;
         }
-    }
+        
+    }   
 }
